@@ -19,7 +19,7 @@ function App() {
     const firstValue = diceNumbers[0].value
     const sameDice = diceNumbers.every(diceNumber => diceNumber.value === firstValue)
     if (sameDice && allHeld) {
-      setTenzies(true
+      setTenzies(true)
       console.log("You won!")
     }
   }, [diceNumbers])
