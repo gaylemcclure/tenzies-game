@@ -1,0 +1,137 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background-color: #0B2434;
+  padding: 20px;
+}
+
+.main {
+  background-color: #F5F5F5;
+  height: 700px;
+  max-width: 800px;
+  border-radius: 5px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  margin-top: 30px;
+  flex-wrap: wrap;
+}
+
+.dice-container {
+  display: grid;
+  grid-template: auto auto / repeat(5, 1fr);
+  gap: 20px;
+  height: 180px;
+  width: 550px;
+  margin-top: 20px;;
+}
+
+.title {
+  display: block;
+  height: 150px;
+  text-align: center;
+  margin: 20px 100px 0;
+  
+}
+
+.title_text {
+  font-family: Karla;
+  font-size: 55px;
+  margin-bottom: 10px;
+  margin-top: 0;
+  font-weight: 700;
+}
+
+.subtext {
+  height: 75px;
+  font-family: Inter;
+  font-weight: 400;
+  font-size: 25px;
+}
+
+.die {
+  height: 70px;
+  width: 70px;
+  box-shadow: 2px 3px 2px rgba(0, 0, 0, 0.15);
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  background-color: white;
+}
+
+.die-num {
+  font-size: 2.2rem;
+  font-family: Karla;
+}
+
+.button-container {
+  height: 70px;
+  margin-top: 40px;
+}
+
+.button {
+  background-color: #5035FF;
+  color: white;
+  padding: 15px 65px;
+  border-radius: 5px;
+  font-family: Karla;
+  font-size: 30px;
+}
+
+.counter_container {
+  height: 100px;
+  width: 100px;
+  background-color: #5035FF;
+  border-radius: 5px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  flex-direction: row;
+  box-shadow: 2px 3px 2px rgba(0, 0, 0, 0.15);
+}
+
+.counter_text {
+  font-family: Karla;
+  font-size: 60px;
+  text-align: center;
+  margin: 0;
+  padding-top: 15px;
+  color: white;
+}
+
+.popup {
+  background-color: green;
+  height: 500px;
+  width: 600px;
+  position: fixed;
+  z-index: 1;
+  left: 270px;
+  top: 140px;
+  border-radius: 10px;
+  opacity: 0.9;
+}
+
+.congrats_text {
+  color: white;
+  font-family: Karla;
+  font-size: 100px;
+  opacity: 1;
+  position: fixed;
+  z-index: 2;
+  left: 420px;
+  top: 200px;
+  text-align: center;
+}
+
+.hidden {
+  color: #0B2434;
+  position: fixed;
+  opacity: 0;
+}
